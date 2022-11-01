@@ -1,0 +1,13 @@
+<?php use PHPUnit\Framework\TestCase;
+
+class CalculatorTest extends TestCase 
+{
+	public function testSum()
+	{
+		$obj = new App\Calculator();
+		$result = $obj->sum(5,6);
+		$this->assertEquals(11, $result);
+	}
+}
+
+?>
